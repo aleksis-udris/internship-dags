@@ -1,0 +1,15 @@
+[
+	{ "id": 0, "name": "iPhone 13 Mini", "price": 699.99, "count": 32, "brand_id": 2},
+	{ "id": 1, "name": "Buds 2 Pro", "price": 249.99, "count": 134, "brand_id": 3},
+	{ "id": 2, "name": "ErgoSleep Matress+", "price": 179.99, "count": 43, "brand_id": 7},
+	{ "id": 3, "name": "R7", "price": 1299.99, "count": 12, "brand_id": 0},
+	{ "id": 4, "name": "a7 iii", "price": 1549.59, "count": 6, "brand_id": 1},
+	{ "id": 5, "name": "Pixel 10 Pro Max", "price": 1419.99, "count": 20, "brand_id": 3},
+	{ "id": 6, "name": "Airpods 3 Pro", "price": 279.99, "count": 234, "brand_id": 2},
+	{ "id": 7, "name": "Sauvage", "price": 124.99, "count": 14, "brand_id": 4},
+	{ "id": 8, "name": "Forest Flirt", "price": 89.99, "count": 8, "brand_id": 5},
+	{ "id": 9, "name": "Aspire 5s", "price": 1009.99, "count": 21, "brand_id": 6},
+	{ "id": 10, "name": "Single-Din Radio E200 Model", "price": 359.99, "count": 7, "brand_id": 9},
+	{ "id": 11, "name": "Mi 17 Pro Max", "price": 1199.99, "count": 33, "brand_id": 8},
+	{ "id": 12, "name": "iPad Pro M4", "price": 1399.99, "count": 3, "brand_id": 2}
+]

@@ -1,0 +1,33 @@
+[
+	{
+		"name": "iPhone 13 mini",
+		"description": "Apple's 2021 smartphone offering for the masses, with 2 cameras and smallsize, it's a powerhouse in your palm.",
+		"price": 699.99,
+		"stock": 23
+	},
+	{
+	
+		"name": "Galaxy S22 Ultra",
+		"description": "Samsung Galaxy S22 Ultra, released in January 2022, is a massive tablet-sized phone with a comfortable stylus.",
+		"price": 1299.99,
+		"stock": 43
+	},
+	{
+		"name": "Buds 2 Pro", 
+		"description": "Latest and Greatest audio solution from Google", 
+		"price": 249.99,
+		"stock": 12
+	}, 
+	{
+		"name": "R7 (2022)",
+		"description": "Digital camera's are great and Canon is the greatest solution",
+		"price": 899.99,
+		"stock": 38
+	}, 
+	{
+		"name": "Alpha 7ii",
+		"description": "Sony always stuns with their camera solutions and 7ii is no different with it's amazing foldable display and 2 inch sensor",
+		"price": 1349.99,
+		"stock": 17
+	}
+]

@@ -1,0 +1,450 @@
+[
+	 {
+		"client": "Alice",
+		"item": "iPhone 13 mini",
+		"amount": 1,
+		"price": 799.99,
+		"date": "2021-11-12"
+	},
+	{
+		"client": "Bob",
+		"item": "Galaxy S21 Ultra",
+		"amount": 1,
+		"price": 1399.99,
+		"date": "2021-12-21"
+	},
+	{
+		"client": "Charlie",
+		"item": "Bose QuietComfort 45 Headphones",
+		"amount": 1,
+		"price": 329.00,
+		"date": "2021-09-23"
+	},
+	{
+		"client": "David",
+		"item": "Apple MacBook Pro 14-inch (M1 Pro, 16GB RAM, 512GB SSD)",
+		"amount": 1,
+		"price": 1999.00,
+		"date": "2021-10-26"
+	},
+	{
+		"client": "Eve",
+		"item": "Sony PlayStation 5 Console (Disc Version, 825GB)",
+		"amount": 1,
+		"price": 499.99,
+		"date": "2022-01-15"
+	},
+	{
+		"client": "Frank",
+		"item": "Apple Watch Series 7 (GPS, 41mm)",
+		"amount": 1,
+		"price": 399.00,
+		"date": "2021-10-18"
+	},
+	{
+		"client": "Grace",
+		"item": "GoPro HERO10 Black",
+		"amount": 1,
+		"price": 499.99,
+		"date": "2021-09-17"
+	},
+	{
+		"client": "Henry",
+		"item": "Amazon Fire HD 10 tablet (32 GB)",
+		"amount": 1,
+		"price": 149.99,
+		"date": "2022-03-10"
+	},
+	{
+		"client": "Ivy",
+		"item": "JBL Vibe Beam True Wireless Earbuds",
+		"amount": 1,
+		"price": 79.99,
+		"date": "2023-01-20"
+	},
+	{
+		"client": "Jack",
+		"item": "Samsung The Frame QLED 4K Smart TV (43-inch, 2021 Edition)",
+		"amount": 1,
+		"price": 999.99,
+		"date": "2021-12-05"
+	},
+	{
+		"client": "Kelly",
+		"item": "Lenovo ThinkBook E15 Laptop (Intel i5, 8GB RAM, 256GB SSD)",
+		"amount": 1,
+		"price": 850.00,
+		"date": "2022-02-28"
+	},
+	{
+		"client": "Liam",
+		"item": "Apple iPad 11-inch (128GB, Wi-Fi, 2021 Model)",
+		"amount": 1,
+		"price": 599.00,
+		"date": "2022-05-19"
+	},
+	{
+		"client": "Mia",
+		"item": "Blink Outdoor 4 Wireless Smart Security Camera (1 system)",
+		"amount": 1,
+		"price": 109.99,
+		"date": "2023-08-01"
+	},
+	{
+		"client": "Noah",
+		"item": "Amazon Fire TV Stick 4K Max",
+		"amount": 1,
+		"price": 54.99,
+		"date": "2021-10-07"
+	},
+	{
+		"client": "Olivia",
+		"item": "Asus Chromebook Plus CX34",
+		"amount": 1,
+		"price": 499.00,
+		"date": "2023-09-12"
+	},
+	{
+		"client": "Peter",
+		"item": "Sony WH-1000XM4 Noise Cancelling Headphones",
+		"amount": 1,
+		"price": 349.99,
+		"date": "2021-11-25"
+	},
+	{
+		"client": "Quinn",
+		"item": "Nintendo Switch OLED Model",
+		"amount": 1,
+		"price": 349.99,
+		"date": "2021-10-08"
+	},
+	{
+		"client": "Rachel",
+		"item": "Dyson V11 Outsize Cordless Vacuum",
+		"amount": 1,
+		"price": 699.99,
+		"date": "2022-04-03"
+	},
+	{
+		"client": "Sam",
+		"item": "Xbox Series X Console",
+		"amount": 1,
+		"price": 499.99,
+		"date": "2022-06-21"
+	},
+	{
+		"client": "Tina",
+		"item": "Apple AirPods Pro (2nd Generation, 2022)",
+		"amount": 1,
+		"price": 249.00,
+		"date": "2022-09-23"
+	},
+	{
+		"client": "Uma",
+		"item": "Samsung Galaxy Tab S8 Ultra (128GB, Wi-Fi)",
+		"amount": 1,
+		"price": 1099.99,
+		"date": "2022-02-25"
+	},
+	{
+		"client": "Victor",
+		"item": "LG C2 OLED 4K TV (55-inch, 2022 Model)",
+		"amount": 1,
+		"price": 1799.99,
+		"date": "2022-07-07"
+	},
+	{
+		"client": "Wendy",
+		"item": "Google Pixel 6 Pro (128GB)",
+		"amount": 1,
+		"price": 899.00,
+		"date": "2021-10-28"
+	},
+	{
+		"client": "Xavier",
+		"item": "Roku Streaming Stick 4K (2021)",
+		"amount": 1,
+		"price": 49.99,
+		"date": "2021-10-15"
+	},
+	{
+		"client": "Yara",
+		"item": "Fitbit Charge 5 Advanced Fitness Tracker",
+		"amount": 1,
+		"price": 179.95,
+		"date": "2021-10-01"
+	},
+	{
+		"client": "Zane",
+		"item": "Amazon Echo Dot (4th Gen)",
+		"amount": 1,
+		"price": 49.99,
+		"date": "2021-11-26"
+	},
+	{
+		"client": "Amy",
+		"item": "HP Envy x360 2-in-1 Laptop (Ryzen 5, 8GB RAM, 512GB SSD)",
+		"amount": 1,
+		"price": 750.00,
+		"date": "2022-08-11"
+	},
+	{
+		"client": "Ben",
+		"item": "Canon EOS R6 Mirrorless Camera (Body Only)",
+		"amount": 1,
+		"price": 2499.00,
+		"date": "2021-12-30"
+	},
+	{
+		"client": "Chloe",
+		"item": "Sonos Beam (Gen 2) Soundbar",
+		"amount": 1,
+		"price": 449.00,
+		"date": "2021-10-12"
+	},
+	{
+		"client": "Dan",
+		"item": "Apple Watch Ultra",
+		"amount": 1,
+		"price": 799.00,
+		"date": "2022-09-23"
+	},
+	{
+		"client": "Erin",
+		"item": "Meta Quest 2 (128GB)",
+		"amount": 1,
+		"price": 299.99,
+		"date": "2022-01-07"
+	},
+	{
+		"client": "Fred",
+		"item": "DJI Mavic 3 Drone",
+		"amount": 1,
+		"price": 2199.00,
+		"date": "2021-11-04"
+	},
+	{
+		"client": "Gina",
+		"item": "Samsung Galaxy S22 Ultra (256GB)",
+		"amount": 1,
+		"price": 1199.99,
+		"date": "2022-02-25"
+	},
+	{
+		"client": "Hal",
+		"item": "Dell XPS 13 Plus Laptop (Core i7, 16GB RAM, 512GB SSD)",
+		"amount": 1,
+		"price": 1399.00,
+		"date": "2022-04-20"
+	},
+	{
+		"client": "Ira",
+		"item": "Arlo Pro 4 Spotlight Camera (3-pack bundle)",
+		"amount": 1,
+		"price": 499.99,
+		"date": "2021-11-01"
+	},
+	{
+		"client": "Jen",
+		"item": "Bose Noise Cancelling Headphones 700",
+		"amount": 1,
+		"price": 379.00,
+		"date": "2022-03-15"
+	},
+	{
+		"client": "Kyle",
+		"item": "Microsoft Surface Pro 8 (Core i5, 8GB RAM, 128GB SSD)",
+		"amount": 1,
+		"price": 1099.99,
+		"date": "2021-11-10"
+	},
+	{
+		"client": "Laura",
+		"item": "Google Nest Thermostat",
+		"amount": 1,
+		"price": 129.99,
+		"date": "2022-05-22"
+	},
+	{
+		"client": "Mike",
+		"item": "Corsair K70 RGB TKL Champion Series Keyboard",
+		"amount": 1,
+		"price": 139.99,
+		"date": "2021-09-30"
+	},
+	{
+		"client": "Nina",
+		"item": "PlayStation 5 DualSense Wireless Controller",
+		"amount": 1,
+		"price": 69.99,
+		"date": "2022-07-14"
+	},
+	{
+		"client": "Oscar",
+		"item": "Samsung 98-inch Class QN90A Neo QLED 4K TV",
+		"amount": 1,
+		"price": 4999.99,
+		"date": "2022-10-10"
+	},
+	{
+		"client": "Paula",
+		"item": "TP-Link Deco XE75 Mesh Wi-Fi 6E System (3-pack)",
+		"amount": 1,
+		"price": 299.99,
+		"date": "2022-06-01"
+	},
+	{
+		"client": "Quentin",
+		"item": "Sony Alpha 7 IV Mirrorless Camera",
+		"amount": 1,
+		"price": 2499.00,
+		"date": "2021-12-09"
+	},
+	{
+		"client": "Rosa",
+		"item": "Anker Soundcore Liberty 3 Pro Earbuds",
+		"amount": 1,
+		"price": 169.99,
+		"date": "2021-10-04"
+	},
+	{
+		"client": "Steve",
+		"item": "Logitech MX Master 3S Wireless Mouse",
+		"amount": 1,
+		"price": 99.99,
+		"date": "2022-05-24"
+	},
+	{
+		"client": "Tess",
+		"item": "Garmin Venu 2 Smartwatch",
+		"amount": 1,
+		"price": 399.99,
+		"date": "2021-09-29"
+	},
+	{
+		"client": "Uriel",
+		"item": "Samsung Galaxy Z Fold 3 5G (256GB)",
+		"amount": 1,
+		"price": 1799.99,
+		"date": "2021-09-01"
+	},
+	{
+		"client": "Vera",
+		"item": "Eufy Security Video Doorbell Dual",
+		"amount": 1,
+		"price": 259.99,
+		"date": "2022-03-24"
+	},
+	{
+		"client": "Will",
+		"item": "Nanoleaf Lines Smarter Kit (9 lines)",
+		"amount": 1,
+		"price": 199.99,
+		"date": "2021-11-20"
+	},
+	{
+		"client": "Xena",
+		"item": "HP Reverb G2 VR Headset",
+		"amount": 1,
+		"price": 599.99,
+		"date": "2022-01-05"
+	},
+	{
+		"client": "Yannick",
+		"item": "Google Pixel Buds Pro Earbuds",
+		"amount": 1,
+		"price": 199.99,
+		"date": "2022-07-28"
+	},
+	{
+		"client": "Zoe",
+		"item": "WD Black SN850 1TB NVMe SSD",
+		"amount": 1,
+		"price": 149.99,
+		"date": "2022-08-30"
+	},
+	{
+		"client": "Adam",
+		"item": "Apple HomePod mini Speaker",
+		"amount": 1,
+		"price": 99.00,
+		"date": "2021-12-16"
+	},
+	{
+		"client": "Beth",
+		"item": "Nvidia GeForce RTX 3080 Graphics Card (Founder's Edition)",
+		"amount": 1,
+		"price": 699.00,
+		"date": "2021-11-18"
+	},
+	{
+		"client": "Carl",
+		"item": "Samsung Galaxy Watch 4 Classic (46mm)",
+		"amount": 1,
+		"price": 379.99,
+		"date": "2021-09-10"
+	},
+	{
+		"client": "Dana",
+		"item": "GoPro HERO11 Black",
+		"amount": 1,
+		"price": 499.99,
+		"date": "2022-09-14"
+	},
+	{
+		"client": "Ethan",
+		"item": "Logitech C920x HD Pro Webcam",
+		"amount": 1,
+		"price": 69.99,
+		"date": "2021-10-21"
+	},
+	{
+		"client": "Fiona",
+		"item": "Amazon Kindle Paperwhite (11th Gen, 8GB)",
+		"amount": 1,
+		"price": 139.99,
+		"date": "2021-11-29"
+	},
+	{
+		"client": "George",
+		"item": "Sony WH-1000XM5 Noise Cancelling Headphones",
+		"amount": 1,
+		"price": 399.99,
+		"date": "2022-05-20"
+	},
+	{
+		"client": "Helen",
+		"item": "Microsoft Xbox Elite Series 2 Controller",
+		"amount": 1,
+		"price": 179.99,
+		"date": "2022-08-08"
+	},
+	{
+		"client": "Ian",
+		"item": "Apple iPhone 14 Pro Max (256GB)",
+		"amount": 1,
+		"price": 1199.00,
+		"date": "2022-09-16"
+	},
+	{
+		"client": "Jess",
+		"item": "Google Nest Hub (2nd Gen)",
+		"amount": 1,
+		"price": 99.99,
+		"date": "2021-12-28"
+	},
+	{
+		"client": "Kevin",
+		"item": "Samsung Galaxy S23 Ultra (512GB)",
+		"amount": 1,
+		"price": 1379.99,
+		"date": "2023-02-17"
+	},
+	{
+		"client": "Lily",
+		"item": "Apple MacBook Air 13-inch (M2, 8GB RAM, 256GB SSD)",
+		"amount": 1,
+		"price": 1199.00,
+		"date": "2022-07-15"
+	}
+]

@@ -1,0 +1,12 @@
+[
+	{"id": 0, "date": "2022-01-01", "price_paid": 699.99, "item_id": 0, "customer_id": 2},
+	{"id": 1, "date": "2022-02-26", "price_paid": 359.99, "item_id": 10, "customer_id": 4},
+	{"id": 2, "date": "2022-06-13", "price_paid": 279.99, "item_id": 6, "customer_id":0},
+	{"id": 3, "date": "2022-07-25", "price_paid": 1009.99, "item_id": 9, "customer_id":4},
+	{"id": 4, "date": "2022-08-23", "price_paid": 179.99, "item_id": 2, "customer_id": 0},
+	{"id": 5, "date": "2022-08-28", "price_paid": 1549.59, "item_id": 4, "customer_id":1},
+	{"id": 6, "date": "2022-09-25", "price_paid": 124.99, "item_id": 7, "customer_id": 3},
+	{"id": 7, "date": "2022-10-30", "price_paid": 249.99, "item_id": 1, "customer_id": 2},
+	{"id": 8, "date": "2022-12-10", "price_paid": 1399.99, "item_id": 12, "customer_id":1},
+	{"id": 9, "date": "2022-12-22", "price_paid": 1419.99, "item_id": 5, "customer_id":3}
+]
