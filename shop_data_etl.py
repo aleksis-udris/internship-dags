@@ -35,7 +35,7 @@ def extract_and_load():
         "brands": ["brand_id", "name", "created_at", "updated_at"],
         "categories": ["category_id", "name", "supercategory_id", "created_at", "updated_at"],
         "products": ["product_id", "name", "price", "description", "warehouse_id", "brand_id", "category_id", "created_at", "updated_at"],
-        "products_tags": ["product_id", "tag_id", "created_at", "updated_at"],
+        "products_tags": ["product_id", "tag_id"],
         "tags": ["tag_id", "name", "created_at", "updated_at"],
         "profiles": ["profile_id", "name", "surname", "created_at", "updated_at"],
         "transactions": ["transaction_id", "user_id", "product_id", "warehouse_id", "created_at", "updated_at"],
@@ -58,14 +58,16 @@ def extract_and_load():
         return [list(r) for r in rows]
 
     @task()
-    def extract_clickhouse(table_name):
+    def extract_clickhouse(table_name, columns):
         client = clickhouse_connect.get_client(
             host=os.getenv("CLICKHOUSE_HOST"),
             user=os.getenv("CLICKHOUSE_USER"),
             password=os.getenv("CLICKHOUSE_PASSWORD"),
             secure=True
         )
-        result = client.query(f"SELECT * FROM SHOP_DATA_LAKE.{table_name}")
+        # Use explicit column list instead of SELECT *
+        col_str = ", ".join(columns)
+        result = client.query(f"SELECT {col_str} FROM SHOP_DATA_LAKE.{table_name}")
         client.close()
 
         return [list(r) for r in result.result_rows]
@@ -82,40 +84,35 @@ def extract_and_load():
 
         pk = columns[0]
 
-        ch_map = {row[0]: row for row in ch_rows}
-
+        # Build sets of primary keys for comparison
+        ch_keys = {row[0] for row in ch_rows}
+        pg_keys = {row[0] for row in pg_rows}
         pg_map = {row[0]: row for row in pg_rows}
 
         to_insert = []
-        to_update = []
         to_delete = []
 
-        # DETECT INSERTS/UPDATES
-        for key, pg_row in pg_map.items():
-            if key not in ch_map:
-                to_insert.append(pg_row)
-            else:
-                if pg_row != ch_map[key]:     # row changed
-                    to_update.append(pg_row)
+        # DETECT INSERTS - rows in PG but not in CH
+        for key in pg_keys:
+            if key not in ch_keys:
+                to_insert.append(pg_map[key])
 
-        # DETECT DELETES
-        for key in ch_map.keys():
-            if key not in pg_map:
-                to_delete.append([key])
+        # DETECT DELETES - rows in CH but not in PG
+        for key in ch_keys:
+            if key not in pg_keys:
+                to_delete.append(key)
 
-        #DELETE
+        print(f"[{table_name}] Summary: insert={len(to_insert)}, delete={len(to_delete)}")
+        print(f"[{table_name}] PG keys: {pg_keys}")
+        print(f"[{table_name}] CH keys: {ch_keys}")
+
+        # DELETE rows that don't exist in PostgreSQL
         if to_delete:
-            keys = [row[0] for row in to_delete]
-            key_list = ",".join(str(k) for k in keys)
+            key_list = ",".join(str(k) for k in to_delete)
             client.command(f"ALTER TABLE SHOP_DATA_LAKE.{table_name} DELETE WHERE {pk} IN ({key_list})")
+            client.command(f"OPTIMIZE TABLE SHOP_DATA_LAKE.{table_name} FINAL")
 
-        for row in to_update:
-            key = row[0]
-            client.command(f"ALTER TABLE SHOP_DATA_LAKE.{table_name} DELETE WHERE {pk} = {key}")
-
-        if to_update:
-            client.insert(f"SHOP_DATA_LAKE.{table_name}", to_update, column_names=columns)
-
+        # INSERT new rows from PostgreSQL
         if to_insert:
             client.insert(f"SHOP_DATA_LAKE.{table_name}", to_insert, column_names=columns)
 
@@ -123,14 +120,12 @@ def extract_and_load():
 
         return {
             "inserted": len(to_insert),
-            "updated": len(to_update),
             "deleted": len(to_delete)
         }
 
     for table_name, columns in TABLES_CONFIG.items():
-
         pg_data = extract_postgres(table_name, columns)
-        ch_data = extract_clickhouse(table_name)
+        ch_data = extract_clickhouse(table_name, columns)  # Pass columns here
 
         sync_table(
             table_name=table_name,
